@@ -51,8 +51,9 @@ console.log(weekendDays[1].toUpperCase())//SUNDAY
 // --------------------5) What will this log?
 
 var dataTypes = ["number", "string", "Boolean"]
-console.log(typeof dataTypes.length)
-console.log(dataTypes.length)
+console.log(typeof dataTypes.length)://typeof 3--->output: number
+console.log(dataTypes.length)//Output:3
+console.log(typeof true)// "Boolean"<----output will be a string.
 
 // a) Your answer: Arrey has Length Property. dataTypes.length will be 3. and typeof 3 will be number.  I am not sure typeof here but try. 
 // b) Verify and explain:the output is number. Review: The typeof operator returns the data type of its operand in the form of a string.

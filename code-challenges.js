@@ -97,6 +97,13 @@ var myString2 = "charlie"
 console.log(letterReversed(myString1))
 console.log(letterReversed(myString2))
 
+//Solution:.split()-->.reverse()---->.join()
+//const reverseArray = (string) =>{
+//return string.split("").reverse("").join("")
+//}
+//console.log(reverseArray(myString1))
+//console.log(reverseArray(myString2))
+
 
 // --------------------4) Create a function that takes in two numbers and subtracts the smaller number from the larger number.
 // Use the two sets of test variables provided below. Expected output: 15, 12

@@ -55,11 +55,19 @@ const singleSortArray = (numbers1, numbers2) =>{
     //It seems .sort() handles the array itms as strings.
 
     //Googled and Get the method below from stackoverflow:
+   //Solution 1：
     var newNumbers = new Float64Array(numbers1.concat(numbers2))
     return newNumbers.sort()   
     //Output as expected: Float64Array(10) [-9, -7,  0,  3,  7, 8,  9, 13, 22, 36]
     //The Float64Array typed array represents an array of 64-bit floating point numbers (corresponding to the C double data type) in the platform byte order. 
     //If control over byte order is needed, use DataView instead. The contents are initialized to 0 
+    
+    //Solution 2：
+    //let newNumbers = numbers1.concat(numbers2)
+    //return newNumbers.sort((a,b) => a-b)---> a, b are placeholder no meaning
+    
+    //Solution 3：--simplified
+    //return numbers1.concat(numbers2).sort((firstNumber,secondNumber) => firstNumber - secondNumber)
 }
 
 console.log(singleSortArray(myNumbers1,myNumbers2))
